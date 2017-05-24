@@ -1,0 +1,75 @@
+﻿@using System.Web.Optimization;
+
+@{
+    Layout = ("~/Areas/Admin/Views/Shared/_Layout.cshtml");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OgrenciListele</title>
+    @Styles.Render("~/admin/styles")
+</head>
+<body>
+
+    <div>
+        <div class="panel-heading"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <b>
+                        Öğrenci Listesi
+                    </b>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="text-center mystyle">ID</th>
+                                    <th class="text-center mystyle">AD SOYAD</th>
+                                    <th class="text-center mystyle">ÖĞRENCİ NO</th>
+                                    <th class="text-center mystyle">BÖLÜM</th>
+                                    <th class="text-center mystyle">İŞLEMLER</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                
+
+
+                                <tr class="default">
+                                    <td class="text-center active"></td>
+                                    <td class="text-center active"></td>
+                                    <td class="text-center active"></td>
+                                    <td class="text-center active"></td>
+                                    <td class="text-center active">
+
+                                        <button type="submit" class="btn btn-xs btn-info">
+                                            <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
+                                        </button>
+
+                                        <button type="button" class="btn btn-xs btn-danger">
+                                            <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
+                                        </button>
+
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+</body>
+</html>

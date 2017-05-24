@@ -1,0 +1,70 @@
+﻿@using System.Web.Optimization;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    @Styles.Render("~/admin/styles")
+</head>
+<body style="background:#cecece;">
+    <div style="background:#1793d1; font-size:20px; text-align:center; color:#FFF; height:50px; padding-top:12px;">Öğrenci Yoklama Sistemi</a></div>
+    <div id="wrap">
+        <header>
+            <div class="inner relative">
+                <a class="logo"><img src="~/Content/images/logo.png"></a>
+                <a id="menu-toggle" class="button dark" href="#"><i class="icon-reorder"></i></a>
+                <nav id="navigation">
+                    <ul id="main-menu">
+
+
+                        
+
+                        <li class="parent">
+                            <a>Öğrenci İşlemleri</a>
+                            <ul class="sub-menu">
+                                <li>@Html.ActionLink("Ogrencileri Listele", "OgrenciListele", "Ogrenci", new { area = "admin" }, new { })</li>
+                                <li>@Html.ActionLink("Ogrenci Ekle", "OgrenciEkle", "Ogrenci", new { area = "admin" }, new { })</li>
+
+                            </ul>
+                        </li>
+
+
+
+                        <li class="parent">
+                            <a>Dersler</a>
+                            <ul class="sub-menu">
+                                <li>@Html.ActionLink("Dersleri Göster", "DersleriGoster", "Ders", new { area = "admin" }, new { })</li>
+                                <li>@Html.ActionLink("Ders Ekle", "DersEkle", "Ders", new { area = "admin" }, new { })</li>
+                            </ul>
+                        </li>
+
+
+                        <li class="parent">
+                            <a>Duyurular</a>
+                            <ul class="sub-menu">
+                                <li><a href="duyurulari_goster.php">Duyuruları Göster</a></li>
+                                <li><a href="duyuru_ekleme_formu.php">Duyuru Ekle</a></li>
+
+
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+    </div>
+    @RenderBody()
+</body>
+</html>

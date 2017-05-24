@@ -1,0 +1,33 @@
+﻿@using System.Web.Optimization;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Styles.Render("~/styles")
+</head>
+<body>
+    <div class="login">
+        <marquee><h1>Hoşgeldiniz</h1></marquee>
+        <form action="admin_giris_kontrol.php" method="post">
+            <input type="text" name="kulad" placeholder="Kullanıcı adı" />
+            <br>
+            <br>
+            <input type="password" name="sifre" placeholder="Şifre" />
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Giriş</button>
+        </form>
+    </div>
+
+
+    @Scripts.Render("~/admin/scripts")
+
+</body>
+</html>
