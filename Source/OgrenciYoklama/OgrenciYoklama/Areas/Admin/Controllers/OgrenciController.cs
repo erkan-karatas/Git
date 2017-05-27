@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NHibernate.Linq;
+using OgrenciYoklama.Areas.Admin.ViewModels;
+using OgrenciYoklama.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +15,8 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
         // GET: Admin/Ogrenci
         public ActionResult OgrenciListele()
         {
-            return View();
+            var ogrenciler = Database.Session.Query<Ogrenci>();
+            return View(new OgrencilerOgrenciListele() { Ogrenciler = ogrenciler });
         }
 
         public ActionResult OgrenciEkle()

@@ -14,10 +14,7 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             var yoneticiler = Database.Session.Query<Yonetici>();
             return View(new YoneticilerYoneticiListele() { Yoneticiler = yoneticiler });
 
-            /*return View(new YoneticiYoneticiListele
-            {
-                Yoneticiler = Database.Session.Query<Yonetici>().ToList()
-            });*/
+            
         }
     }
 }

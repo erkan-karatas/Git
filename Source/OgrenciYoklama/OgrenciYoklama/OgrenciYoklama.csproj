@@ -182,7 +182,7 @@
     <Compile Include="Areas\Admin\Controllers\DersController.cs" />
     <Compile Include="Areas\Admin\Controllers\OgrenciController.cs" />
     <Compile Include="Areas\Admin\Controllers\YoneticiController.cs" />
-    <Compile Include="Areas\Admin\ViewModels\Ogrenci.cs" />
+    <Compile Include="Areas\Admin\ViewModels\Ogrenciler.cs" />
     <Compile Include="Areas\Admin\ViewModels\Yoneticiler.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Database.cs" />

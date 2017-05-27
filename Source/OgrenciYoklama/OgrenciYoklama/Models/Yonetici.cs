@@ -9,9 +9,9 @@ namespace OgrenciYoklama.Models
 {
     public class Yonetici
     {
-        public virtual int YoneticiId { get; set; }
-        public virtual string KullaniciAdi { get; set; }
-        public virtual string Sifre { get; set; }
+        public virtual int yonetici_id { get; set; }
+        public virtual string kullanici_adi { get; set; }
+        public virtual string sifre { get; set; }
     }
 
     public class YoneticiMap : ClassMapping<Yonetici>
@@ -19,10 +19,10 @@ namespace OgrenciYoklama.Models
         public YoneticiMap()
         {
             Table("yonetici");
-            Id(x => x.YoneticiId, x => x.Generator(Generators.Identity));
+            Id(x => x.yonetici_id, x => x.Generator(Generators.Identity));
 
-            Property(x => x.KullaniciAdi, x => x.NotNullable(true));
-            Property(x => x.Sifre, x => x.NotNullable(true));
+            Property(x => x.kullanici_adi, x => x.NotNullable(true));
+            Property(x => x.sifre, x => x.NotNullable(true));
 
         }
     }
