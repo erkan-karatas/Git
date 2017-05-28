@@ -25,6 +25,9 @@
                 <div class="panel-heading text-center">
                     <b>
                         Yönetici Listesi
+                        <button class="btn btn-xs btn-default pull-right">
+                            <span class="glyphicon glyphicon-plus"></span> <b>Yeni</b>
+                        </button>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -32,7 +35,7 @@
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th class="text-center mystyle">ID</th>
+                                    
                                     <th class="text-center mystyle">KULLANICI ADI</th>
                                     <th class="text-center mystyle">İŞLEMLER</th>
 
@@ -48,15 +51,15 @@
                                 <tr class="default">
 
 
-                                    <td class="text-center active">@Yonetici.yonetici_id</td>
-                                    <td class="text-center active">@Yonetici.kullanici_adi</td>
+                                    
+                                    <td class="text-center active"><b>@Yonetici.kullanici_adi</b></td>
                                     <td class="text-center active">
 
-                                        <button type="submit" class="btn btn-xs btn-info">
+                                        <button type="submit" class="btn btn-xs btn-primary">
                                             <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
                                         </button>
 
-                                        <button type="button" class="btn btn-xs btn-danger">
+                                        <button type="submit" class="btn btn-xs btn-danger">
                                             <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
                                         </button>
 

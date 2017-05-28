@@ -4,6 +4,8 @@ using OgrenciYoklama.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using System;
+using System.Web;
 
 namespace OgrenciYoklama.Areas.Admin.Controllers
 {
@@ -16,5 +18,6 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
 
             
         }
+
     }
 }

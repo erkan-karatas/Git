@@ -23,7 +23,9 @@ namespace OgrenciYoklama
 
             var mapper = new ModelMapper();
             mapper.AddMapping<YoneticiMap>();
-            
+            mapper.AddMapping<OgrenciMap>();
+            mapper.AddMapping<DersMap>();
+
 
 
             config.AddMapping(mapper.CompileMappingForAllExplicitlyAddedEntities());

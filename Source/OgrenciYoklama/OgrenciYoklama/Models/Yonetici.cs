@@ -20,9 +20,10 @@ namespace OgrenciYoklama.Models
         {
             Table("yonetici");
             Id(x => x.yonetici_id, x => x.Generator(Generators.Identity));
-
             Property(x => x.kullanici_adi, x => x.NotNullable(true));
             Property(x => x.sifre, x => x.NotNullable(true));
+
+           
 
         }
     }

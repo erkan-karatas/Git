@@ -156,12 +156,10 @@
     <Content Include="Content\Styles\Anasayfa.css" />
     <Content Include="Content\Styles\menu.css" />
     <Content Include="Global.asax" />
-    <Content Include="Areas\Admin\Views\Ogrenci\OgrenciListele.cshtml" />
-    <Content Include="Areas\Admin\Views\Ogrenci\OgrenciEkle.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Ders\DersleriGoster.cshtml" />
-    <Content Include="Areas\Admin\Views\Ders\DersEkle.cshtml" />
     <Content Include="Areas\Admin\Views\Yonetici\YoneticiListele.cshtml" />
+    <Content Include="Areas\Admin\Views\Ogrenci\OgrenciListele.cshtml" />
+    <Content Include="Areas\Admin\Views\Ders\DersListele.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -182,6 +180,7 @@
     <Compile Include="Areas\Admin\Controllers\DersController.cs" />
     <Compile Include="Areas\Admin\Controllers\OgrenciController.cs" />
     <Compile Include="Areas\Admin\Controllers\YoneticiController.cs" />
+    <Compile Include="Areas\Admin\ViewModels\Dersler.cs" />
     <Compile Include="Areas\Admin\ViewModels\Ogrenciler.cs" />
     <Compile Include="Areas\Admin\ViewModels\Yoneticiler.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -190,9 +189,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\RoleProvider.cs" />
-    <Compile Include="Migrations\_001_Tablolar.cs" />
-    <Compile Include="Models\Yonetici.cs" />
+    <Compile Include="Migrations\_001_Ogrenci_Ve_Yonetici.cs" />
+    <Compile Include="Migrations\_002_Dersler.cs" />
+    <Compile Include="Models\Ders.cs" />
     <Compile Include="Models\Ogrenci.cs" />
+    <Compile Include="Models\Yonetici.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,6 @@
-﻿@using System.Web.Optimization;
+﻿@model OgrenciYoklama.Areas.Admin.ViewModels.DerslerDersListele
+@using System.Web.Optimization;
+
 
 @{
     Layout = ("~/Areas/Admin/Views/Shared/_Layout.cshtml");
@@ -23,6 +25,9 @@
                 <div class="panel-heading text-center">
                     <b>
                         Ders Listesi
+                        <button class="btn btn-xs btn-default pull-right">
+                            <span class="glyphicon glyphicon-plus"></span> <b>Yeni</b>
+                        </button>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -30,34 +35,25 @@
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th class="text-center mystyle">ID</th>
                                     <th class="text-center mystyle">DERS ADI</th>
-                                    <th class="text-center mystyle">DERS HOCASI</th>
-                                    <th class="text-center mystyle">İŞLEMLER</th>
+                                    <th class="text-center mystyle">BAŞLANGIÇ TARİHİ</th>
+                                    <th class="text-center mystyle">BİTİŞ TARİHİ</th>
+                                    <th class="text-center mystyle">HAFTALIK SAAT</th>
+
                                 </tr>
                             </thead>
                             <tbody>
 
 
-
-
-                                <tr class="default">
-                                    <td class="text-center active"></td>
-                                    <td class="text-center active"></td>
-                                    <td class="text-center active"></td>
-                                    <td class="text-center active">
-
-                                        <button type="submit" class="btn btn-xs btn-info">
-                                            <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
-                                        </button>
-
-                                        <button type="button" class="btn btn-xs btn-danger">
-                                            <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
-                                        </button>
-
-                                    </td>
-                                </tr>
-
+                                @foreach (var Ders in @Model.Dersler)
+                                {
+                                    <tr class="default">
+                                        <td class="text-center active"><b>@Ders.ders_adi</b></td>
+                                        <td class="text-center active"><b>@Ders.baslangic_tarihi</b></td>
+                                        <td class="text-center active"><b>@Ders.bitis_tarihi</b></td>
+                                        <td class="text-center active"><b>@Ders.haftalik_saat</b></td>
+                                    </tr>
+                                }
 
                             </tbody>
                         </table>

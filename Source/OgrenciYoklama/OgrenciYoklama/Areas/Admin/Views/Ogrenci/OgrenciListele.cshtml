@@ -24,7 +24,10 @@
             <div class="panel panel-primary">
                 <div class="panel-heading text-center">
                     <b>
-                        Öğrenci Listesi
+                        Öğrenci Listesi 
+                        <button class="btn btn-xs btn-default pull-right">
+                            <span class="glyphicon glyphicon-plus"></span> <b>Yeni</b>
+                        </button>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -32,9 +35,11 @@
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    
-                                    <th class="text-center mystyle">ÖĞRENCİ ADI</th>
-                                    <th class="text-center mystyle">İŞLEMLER</th>
+                                    <th class="text-center mystyle">ÖĞRENCİ NO</th>
+                                    <th class="text-center mystyle">AD</th>
+                                    <th class="text-center mystyle">SOYAD</th>
+                                    <th class="text-center mystyle">BÖLÜM</th>
+                                    <th class="text-center mystyle">İŞLEMLER</th>  
 
                                 </tr>
                             </thead>
@@ -46,23 +51,20 @@
 
 
                                     <tr class="default">
-
-
-                                        <td class="text-center active">@Ogrenci.ogrenci_ad</td>
+                                        <td class="text-center active"><b>@Ogrenci.ogrenci_no</b></td>
+                                        <td class="text-center active"><b>@Ogrenci.ogrenci_ad</b></td>
+                                        <td class="text-center active"><b>@Ogrenci.ogrenci_soyad</b></td>
+                                        <td class="text-center active"><b>@Ogrenci.ogrenci_bolum</b></td>
                                         <td class="text-center active">
-
-                                            <button type="submit" class="btn btn-xs btn-info">
+                                            <button type="submit" class="btn btn-xs btn-primary">
                                                 <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
                                             </button>
 
-                                            <button type="button" class="btn btn-xs btn-danger">
+                                            <button type="submit" class="btn btn-xs btn-danger">
                                                 <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
                                             </button>
 
                                         </td>
-
-
-
                                     </tr>
                                 }
 

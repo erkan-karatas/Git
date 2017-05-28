@@ -4,6 +4,8 @@
     Layout = null;
 }
 
+
+
 <!DOCTYPE html>
 
 <html>
@@ -29,7 +31,6 @@
                             <a>Öğrenci İşlemleri</a>
                             <ul class="sub-menu">
                                 <li>@Html.ActionLink("Ogrencileri Listele", "OgrenciListele", "Ogrenci", new { area = "admin" }, new { })</li>
-                                <li>@Html.ActionLink("Ogrenci Ekle", "OgrenciEkle", "Ogrenci", new { area = "admin" }, new { })</li>
 
                             </ul>
                         </li>
@@ -39,8 +40,8 @@
                         <li class="parent">
                             <a>Dersler</a>
                             <ul class="sub-menu">
-                                <li>@Html.ActionLink("Dersleri Göster", "DersleriGoster", "Ders", new { area = "admin" }, new { })</li>
-                                <li>@Html.ActionLink("Ders Ekle", "DersEkle", "Ders", new { area = "admin" }, new { })</li>
+                                <li>@Html.ActionLink("Dersleri Listele", "DersListele", "Ders", new { area = "admin" }, new { })</li>
+                                
                             </ul>
                         </li>
 
@@ -48,7 +49,7 @@
                         <li class="parent">
                             <a>Yöneticiler</a>
                             <ul class="sub-menu">
-                                <li>@Html.ActionLink("Yöneticileri Göster", "YoneticiListele", "Yonetici", new { area = "admin" }, new { })</li>
+                                <li>@Html.ActionLink("Yöneticileri Listele", "YoneticiListele", "Yonetici", new { area = "admin" }, new { })</li>
 
 
                             </ul>

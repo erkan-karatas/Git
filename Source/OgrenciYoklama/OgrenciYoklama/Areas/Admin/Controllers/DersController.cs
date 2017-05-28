@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NHibernate.Linq;
+using OgrenciYoklama.Areas.Admin.ViewModels;
+using OgrenciYoklama.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,14 +12,10 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
     public class DersController : Controller
     {
         // GET: Admin/Ders
-        public ActionResult DersleriGoster()
+        public ActionResult DersListele()
         {
-            return View();
-        }
-
-        public ActionResult DersEkle()
-        {
-            return View();
+            var dersler = Database.Session.Query<Ders>();
+            return View(new DerslerDersListele() { Dersler = dersler });
         }
     }
 }
