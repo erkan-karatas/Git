@@ -228,6 +228,8 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\OgrenciYoklama.dll.config
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\OgrenciYoklama.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\OgrenciYoklama.pdb
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Antlr3.Runtime.dll
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.dll
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.Agent.Intercept.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.DependencyCollector.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -237,7 +239,9 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.WindowsServer.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.ApplicationInsights.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.Web.Infrastructure.dll
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\MySql.Data.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Newtonsoft.Json.dll
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Helpers.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Mvc.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Optimization.dll
@@ -247,6 +251,9 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Webpages.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Webpages.Razor.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\WebGrease.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Antlr3.Runtime.pdb
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.pdb
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.xml
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.DependencyCollector.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.Web.xml
@@ -254,6 +261,7 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.AI.WindowsServer.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.ApplicationInsights.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Newtonsoft.Json.xml
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Optimization.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Razor.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Webpages.xml
@@ -263,11 +271,3 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Helpers.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Mvc.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.pdb
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.dll
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.pdb
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.xml
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.dll
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.dll
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.xml
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.xml
-D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\MySql.Data.dll

@@ -195,6 +195,7 @@
     <Compile Include="Models\Ogrenci.cs" />
     <Compile Include="Models\Yonetici.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Login.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

@@ -1,4 +1,5 @@
-﻿@using System.Web.Optimization;
+﻿@model OgrenciYoklama.ViewModels.LoginIndex
+@using System.Web.Optimization;
 
 @{
     Layout = null;
@@ -9,21 +10,34 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
+    <title>Login Form</title>
     @Styles.Render("~/styles")
 </head>
 <body>
     <div class="login">
-        <marquee><h1>Hoşgeldiniz</h1></marquee>
-        <form action="admin_giris_kontrol.php" method="post">
-            <input type="text" name="kulad" placeholder="Kullanıcı adı" />
-            <br>
-            <br>
-            <input type="password" name="sifre" placeholder="Şifre" />
-            <br>
-            <br>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Giriş</button>
-        </form>
+        <h1>Hoşgeldiniz</h1>
+        
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+
+            <div>
+                @Html.TextBox("username", "", new { type = "text", placeholder = "Kullanıcı adı" })
+            </div>
+
+            <div>
+                @Html.TextBox("password", "", new { type = "password", placeholder = "Şifre" })
+            </div>
+
+
+            <div>
+                <input type="submit" value="Giriş" />
+            </div>
+
+
+
+        }
+
     </div>
 
 

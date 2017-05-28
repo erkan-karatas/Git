@@ -11,9 +11,14 @@ namespace OgrenciYoklama
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Home", "", new { controller = "Login", action = "Index"});
+            routes.MapRoute("Home", "", new { controller = "Login", action = "Index" });
+
+            routes.MapRoute("Admin", "Admin/Ogrenci/OgrenciListele", new { Areas="Admin", controller = "Ogrenci", action = "OgrenciListele" });
+
+
         }
     }
 }
