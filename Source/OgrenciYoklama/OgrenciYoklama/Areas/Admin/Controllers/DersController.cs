@@ -11,7 +11,7 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
 {
     public class DersController : Controller
     {
-        // GET: Admin/Ders
+        
         public ActionResult DersListele()
         {
             var dersler = Database.Session.Query<Ders>();

@@ -9,6 +9,7 @@ using System.Web;
 
 namespace OgrenciYoklama.Areas.Admin.Controllers
 {
+    
     public class OgrenciController : Controller
     {
         // GET: Admin/Ogrenci

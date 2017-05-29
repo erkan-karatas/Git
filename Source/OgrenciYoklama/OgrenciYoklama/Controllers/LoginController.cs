@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace OgrenciYoklama.Controllers
 {
@@ -24,13 +25,19 @@ namespace OgrenciYoklama.Controllers
             var pass = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.sifre == form.password);
 
 
-            if(user.kullanici_adi == form.username && pass.sifre == form.password)
+            if (user.kullanici_adi == form.username && pass.sifre == form.password)
             {
                 return RedirectToRoute("Admin");
-
+            }
+            else if(user.kullanici_adi != form.username && pass.sifre != form.password)
+            {
+                return Content("selamun aleykum");
             }
 
-            return View();
+            return Content("aleykum selam");
+            
+
+
 
         }
 

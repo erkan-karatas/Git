@@ -30,6 +30,8 @@ namespace OgrenciYoklama.Migrations
                 
            Create.Table("yonetici")
                 .WithColumn("yonetici_id").AsInt32().PrimaryKey().Identity()
+                .WithColumn("yonetici_ad").AsString(128)
+                .WithColumn("yonetici_soyad").AsString(128)
                 .WithColumn("kullanici_adi").AsString(128)
                 .WithColumn("sifre").AsString(128);
 
