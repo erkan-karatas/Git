@@ -19,25 +19,37 @@ namespace OgrenciYoklama.Controllers
         }
 
         [HttpPost]
+        
         public ActionResult Index(LoginIndex form)
         {
+         
             var user = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.kullanici_adi == form.username);
             var pass = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.sifre == form.password);
 
+                if (user == null || pass == null)
+                {
+                    return RedirectToRoute("Home");
+                }
+                else if (user.kullanici_adi == form.username && pass.sifre == form.password)
+                {
+                    FormsAuthentication.SetAuthCookie(user.kullanici_adi, true);
+                    return RedirectToRoute("Admin");
+                }
 
-            if (user.kullanici_adi == form.username && pass.sifre == form.password)
-            {
-                return RedirectToRoute("Admin");
-            }
-            else if(user.kullanici_adi != form.username && pass.sifre != form.password)
-            {
-                return Content("selamun aleykum");
-            }
-
-            return Content("aleykum selam");
+       
             
 
+            return View();
 
+
+
+
+        }
+
+        public ActionResult LogOff()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToRoute("Home");
 
         }
 

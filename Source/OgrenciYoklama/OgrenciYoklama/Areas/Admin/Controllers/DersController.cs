@@ -11,7 +11,31 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
 {
     public class DersController : Controller
     {
-        
+        public ActionResult DersEkle()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult DersEkle(Ders form)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(form);
+            }
+
+            var ders = new Ders()
+            {
+                ders_adi = form.ders_adi,
+                baslangic_tarihi = form.baslangic_tarihi,
+                bitis_tarihi = form.bitis_tarihi,
+                haftalik_saat = form.haftalik_saat
+            };
+            Database.Session.Save(ders);
+     
+            return RedirectToAction("DersListele");
+        }
         public ActionResult DersListele()
         {
             var dersler = Database.Session.Query<Ders>();

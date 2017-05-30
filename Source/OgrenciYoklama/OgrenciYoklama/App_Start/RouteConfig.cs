@@ -18,6 +18,8 @@ namespace OgrenciYoklama
 
             routes.MapRoute("Admin", "Admin/Ogrenci/OgrenciListele", new { Areas="Admin", controller = "Ogrenci", action = "OgrenciListele" });
 
+            routes.MapRoute("LogOff", "", new { controller = "Login", action = "LogOff" });
+
 
         }
     }

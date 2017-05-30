@@ -3,6 +3,7 @@ using NHibernate.Mapping.ByCode.Conformist;
 using OgrenciYoklama.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 
@@ -10,10 +11,15 @@ namespace OgrenciYoklama.Models
 {
     public class Ders
     {
+
         public virtual int ders_id { get; set; }
+        [DisplayName("Ders Adı")]
         public virtual string ders_adi { get; set; }
+        [DisplayName("Başlangıç Tarihi")]
         public virtual DateTime baslangic_tarihi { get; set; }
+        [DisplayName("Bitiş Tarihi")]
         public virtual DateTime bitis_tarihi { get; set; }
+        [DisplayName("Haftalık Ders Saati")]
         public virtual int haftalik_saat { get; set; }
     }
 

@@ -160,6 +160,7 @@
     <Content Include="Areas\Admin\Views\Yonetici\YoneticiListele.cshtml" />
     <Content Include="Areas\Admin\Views\Ogrenci\OgrenciListele.cshtml" />
     <Content Include="Areas\Admin\Views\Ders\DersListele.cshtml" />
+    <Content Include="Areas\Admin\Views\Ders\DersEkle.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -189,6 +190,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\RoleProvider.cs" />
+    <Compile Include="YetkiKontrol.cs" />
     <Compile Include="Migrations\_001_Ogrenci_Ve_Yonetici.cs" />
     <Compile Include="Migrations\_002_Dersler.cs" />
     <Compile Include="Models\Ders.cs" />

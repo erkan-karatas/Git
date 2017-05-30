@@ -271,3 +271,12 @@ D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Helpers.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\System.Web.Mvc.xml
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.dll
 D:\Git\Source\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.pdb
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.dll
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.dll
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\MySql.Data.dll
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.dll
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.pdb
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.xml
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.xml
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.xml
+C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.csprojResolveAssemblyReference.cache
