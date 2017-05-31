@@ -24,25 +24,18 @@ namespace OgrenciYoklama.Controllers
         {
          
             var user = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.kullanici_adi == form.username);
-            var pass = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.sifre == form.password);
 
-                if (user == null || pass == null)
+                if (user == null || !user.checkPassword(form.password))
                 {
                     return RedirectToRoute("Home");
                 }
-                else if (user.kullanici_adi == form.username && pass.sifre == form.password)
+                else if (user.kullanici_adi == form.username && user.checkPassword(form.password))
                 {
                     FormsAuthentication.SetAuthCookie(user.kullanici_adi, true);
                     return RedirectToRoute("Admin");
                 }
 
-       
-            
-
             return View();
-
-
-
 
         }
 

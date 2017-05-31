@@ -27,7 +27,7 @@
                         <li class="parent">
                             <a>Yoklama</a>
                             <ul class="sub-menu">
-                                <li></li>
+                                <li>@Html.ActionLink("Yoklama Al", "Index", "Yoklama", new { area = "admin" }, new { })</li>
 
 
                             </ul>
@@ -37,31 +37,18 @@
                         
 
                         <li class="parent">
-                            <a>Öğrenci İşlemleri</a>
-                            <ul class="sub-menu">
-                                <li>@Html.ActionLink("Ogrencileri Listele", "OgrenciListele", "Ogrenci", new { area = "admin" }, new { })</li>
-
-                            </ul>
+                            @Html.ActionLink("Öğrenciler", "OgrenciListele", "Ogrenci", new { area = "admin" }, new { })
                         </li>
 
 
 
                         <li class="parent">
-                            <a>Dersler</a>
-                            <ul class="sub-menu">
-                                <li>@Html.ActionLink("Dersleri Listele", "DersListele", "Ders", new { area = "admin" }, new { })</li>
-                                
-                            </ul>
+                            @Html.ActionLink("Dersler", "DersListele", "Ders", new { area = "admin" }, new { })
                         </li>
 
 
                         <li class="parent">
-                            <a>Yöneticiler</a>
-                            <ul class="sub-menu">
-                                <li>@Html.ActionLink("Yöneticileri Listele", "YoneticiListele", "Yonetici", new { area = "admin" }, new { })</li>
-
-
-                            </ul>
+                            @Html.ActionLink("Yöneticiler", "YoneticiListele", "Yonetici", new { area = "admin" }, new { })
                         </li>
 
 

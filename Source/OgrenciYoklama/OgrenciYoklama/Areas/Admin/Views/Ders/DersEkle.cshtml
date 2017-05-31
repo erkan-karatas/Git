@@ -5,7 +5,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
 
-
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;<b>Ders oluştur</b></h2>
 
 @using (Html.BeginForm("DersEkle", "Ders", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", @role = "form"}))
 {
@@ -16,7 +16,7 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.ders_adi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-4">
                 @Html.EditorFor(model => model.ders_adi, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.ders_adi, "", new { @class = "text-danger" })
             </div>
@@ -24,7 +24,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.baslangic_tarihi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-4">
                 @Html.EditorFor(model => model.baslangic_tarihi, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.baslangic_tarihi, "", new { @class = "text-danger" })
             </div>
@@ -32,7 +32,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.bitis_tarihi, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-4">
                 @Html.EditorFor(model => model.bitis_tarihi, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.bitis_tarihi, "", new { @class = "text-danger" })
             </div>
@@ -40,14 +40,16 @@
         </div>
         <div class="form-group">
             @Html.LabelFor(model => model.haftalik_saat, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="col-md-4">
                 @Html.EditorFor(model => model.haftalik_saat, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.haftalik_saat, "", new { @class = "text-danger" })
             </div>
          </div>
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Ekle" class="btn btn-default" />
+                    <button type="submit" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-floppy-disk"></span> Kaydet
+                    </button>
                 </div>
             </div>
         </div>

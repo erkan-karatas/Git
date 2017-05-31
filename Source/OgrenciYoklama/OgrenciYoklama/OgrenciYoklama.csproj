@@ -48,6 +48,10 @@
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FluentMigrator, Version=1.6.2.0, Culture=neutral, PublicKeyToken=aacfc7de5acabf05, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentMigrator.1.6.2\lib\40\FluentMigrator.dll</HintPath>
       <Private>True</Private>
@@ -161,7 +165,11 @@
     <Content Include="Areas\Admin\Views\Ogrenci\OgrenciListele.cshtml" />
     <Content Include="Areas\Admin\Views\Ders\DersListele.cshtml" />
     <Content Include="Areas\Admin\Views\Ders\DersEkle.cshtml" />
+    <Content Include="Areas\Admin\Views\Yoklama\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Yonetici\YoneticiEkle.cshtml" />
+    <Content Include="Areas\Admin\Views\Ogrenci\OgrenciEkle.cshtml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="LICENSE.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -180,6 +188,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DersController.cs" />
     <Compile Include="Areas\Admin\Controllers\OgrenciController.cs" />
+    <Compile Include="Areas\Admin\Controllers\YoklamaController.cs" />
     <Compile Include="Areas\Admin\Controllers\YoneticiController.cs" />
     <Compile Include="Areas\Admin\ViewModels\Dersler.cs" />
     <Compile Include="Areas\Admin\ViewModels\Ogrenciler.cs" />
@@ -190,6 +199,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\RoleProvider.cs" />
+    <Compile Include="Migrations\_003_Yoklama.cs" />
+    <Compile Include="Models\ogrenciders.cs" />
+    <Compile Include="Models\Yoklama.cs" />
     <Compile Include="YetkiKontrol.cs" />
     <Compile Include="Migrations\_001_Ogrenci_Ve_Yonetici.cs" />
     <Compile Include="Migrations\_002_Dersler.cs" />

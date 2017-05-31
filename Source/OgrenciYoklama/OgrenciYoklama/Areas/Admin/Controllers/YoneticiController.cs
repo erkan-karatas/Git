@@ -20,7 +20,33 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             return View(new YoneticilerYoneticiListele() { Yoneticiler = yoneticiler });
                         
         }
-        
+
+        public ActionResult YoneticiEkle()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult YoneticiEkle(Yonetici form)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(form);
+            }
+
+            var yonetici = new Yonetici()
+            {
+                yonetici_ad = form.yonetici_ad,
+                yonetici_soyad = form.yonetici_soyad,
+                kullanici_adi = form.kullanici_adi
+                
+            };
+            yonetici.SetPassword(form.sifre);
+            Database.Session.Save(yonetici);
+            return RedirectToAction("YoneticiListele");
+        }
+
 
     }
 }

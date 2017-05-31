@@ -28,7 +28,7 @@
                     <b>
                         Öğrenci Listesi 
                         <button class="btn btn-xs btn-default pull-right">
-                            <span class="glyphicon glyphicon-plus"></span> <b>Yeni</b>
+                            <span class="glyphicon glyphicon-plus"></span> <b><a href="@Url.Action("OgrenciEkle","Ogrenci")">Yeni</a></b>
                         </button>
                     </b>
                 </div>
@@ -58,13 +58,10 @@
                                         <td class="text-center active"><b>@Ogrenci.ogrenci_soyad</b></td>
                                         <td class="text-center active"><b>@Ogrenci.ogrenci_bolum</b></td>
                                         <td class="text-center active">
-                                            <button type="submit" class="btn btn-xs btn-primary">
-                                                <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
-                                            </button>
-
-                                            <button type="submit" class="btn btn-xs btn-danger">
-                                                <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
-                                            </button>
+                                            <div class="btn-group">
+                                                <a href="@Url.Action("edit", new {  })" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> <b>Düzenle</b></a>
+                                                <a href="@Url.Action("ogrencisil",new { Ogrenci.ogrenci_id})" class="btn btn-xs btn-danger" data-post="Are you sure you want to delete @Ogrenci.ogrenci_ad?"><i class="glyphicon glyphicon-trash"></i> <b>Sil</b></a>
+                                            </div>
 
                                         </td>
                                     </tr>

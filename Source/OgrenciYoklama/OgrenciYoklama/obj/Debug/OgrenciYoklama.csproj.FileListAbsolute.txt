@@ -280,3 +280,6 @@ C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\FluentMigrator.xml
 C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\Iesi.Collections.xml
 C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\bin\NHibernate.xml
 C:\Users\Root\Desktop\OgrenciYoklama\OgrenciYoklama\obj\Debug\OgrenciYoklama.csprojResolveAssemblyReference.cache
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\BCrypt.Net.dll
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\BCrypt.Net.pdb
+D:\Git\Source\OgrenciYoklama\OgrenciYoklama\bin\BCrypt.Net.xml
