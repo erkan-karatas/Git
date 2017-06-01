@@ -1,4 +1,4 @@
-﻿@model OgrenciYoklama.Models.ogrenciders
+﻿@model OgrenciYoklama.Models.OgrenciDers
 
 @{
     ViewBag.Title = "YoklamaEkle";
@@ -7,7 +7,14 @@
 
 <h2>YoklamaEkle</h2>
 
+   
+<fieldset>
 
+    
+
+    Dersler :    @Html.DropDownList("Dersler")
+
+</fieldset>
 <table class="table">
     @foreach (var Ogrenci in @Model.Ogrenciler)
     {

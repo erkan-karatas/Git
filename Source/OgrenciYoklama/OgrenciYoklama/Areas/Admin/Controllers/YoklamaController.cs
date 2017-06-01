@@ -16,7 +16,7 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
         {
             //  var dersler = Database.Session.Query<Ders>();
             //  ViewBag.YoklamaId = new DerslerDersListele() { Dersler = dersler };
-            ogrenciders ogrders = new ogrenciders();
+            OgrenciDers ogrders = new OgrenciDers();
 
             var ogrenciler = Database.Session.Query<Ogrenci>();
             var ogr = new OgrencilerOgrenciListele()
@@ -29,6 +29,15 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             {
                 Dersler = dersler
             };
+
+            List<SelectListItem> items = new List<SelectListItem>();
+
+          
+            foreach (var item in drs.Dersler)
+            {
+                items.Add(new SelectListItem { Text = item.ders_adi, Value = item.ders_id.ToString()});
+            }
+            ViewBag.Dersler = items;
             ogrders.Dersler = drs.Dersler;
             return View(ogrders);
         }

@@ -26,9 +26,9 @@
                 <div class="panel-heading text-center">
                     <b>
                         Ders Listesi
-                        <button class="btn btn-xs btn-default pull-right">
-                            <span class="glyphicon glyphicon-plus"></span> <b><a href="@Url.Action("DersEkle","Ders")">Yeni</a></b>
-                        </button>
+                        <div class="btn-group pull-right">
+                            <a href="@Url.Action("DersEkle", new { })" class="btn btn-xs btn-default"><i class="glyphicon glyphicon-plus"></i> <b>Yeni</b></a>
+                        </div>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -40,7 +40,7 @@
                                     <th class="text-center mystyle">BAŞLANGIÇ TARİHİ</th>
                                     <th class="text-center mystyle">BİTİŞ TARİHİ</th>
                                     <th class="text-center mystyle">HAFTALIK SAAT</th>
-
+                                    <th class="text-center mystyle">İŞLEMLER</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,6 +53,14 @@
                                         <td class="text-center active"><b>@Ders.baslangic_tarihi</b></td>
                                         <td class="text-center active"><b>@Ders.bitis_tarihi</b></td>
                                         <td class="text-center active"><b>@Ders.haftalik_saat</b></td>
+                                        <td class="text-center active">
+                                            <div class="btn-group">
+                                                <a href="@Url.Action("edit", new {  })" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> <b>Düzenle</b></a>
+
+                                                <a href="@Url.Action("DersSil",new { id = Ders.ders_id})" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> <b>Sil</b></a>
+                                            </div>
+
+                                        </td>
                                     </tr>
                                 }
 

@@ -41,5 +41,14 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             var dersler = Database.Session.Query<Ders>();
             return View(new DerslerDersListele() { Dersler = dersler });
         }
+
+        public ActionResult DersSil(int id)
+        {
+            var ders = Database.Session.Query<Ders>().FirstOrDefault(p => p.ders_id == id);
+            Database.Session.Delete(ders);
+            Database.Session.Flush();
+            return RedirectToAction("DersListele");
+
+        }
     }
 }

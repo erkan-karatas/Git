@@ -47,6 +47,13 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             return RedirectToAction("YoneticiListele");
         }
 
+        public ActionResult YoneticiSil(int id)
+        {
+            var yonetici = Database.Session.Query<Yonetici>().FirstOrDefault(p => p.yonetici_id == id);
+            Database.Session.Delete(yonetici);
+            Database.Session.Flush();
+            return RedirectToAction("YoneticiListele");
 
+        }
     }
 }

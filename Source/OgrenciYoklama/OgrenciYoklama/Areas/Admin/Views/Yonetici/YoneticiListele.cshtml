@@ -27,9 +27,9 @@
                 <div class="panel-heading text-center">
                     <b>
                         Yönetici Listesi
-                        <button class="btn btn-xs btn-default pull-right">
-                            <span class="glyphicon glyphicon-plus"></span> <b><a href="@Url.Action("YoneticiEkle","Yonetici")">Yeni</a></b>
-                        </button>
+                        <div class="btn-group pull-right">
+                            <a href="@Url.Action("YoneticiEkle", new { })" class="btn btn-xs btn-default"><i class="glyphicon glyphicon-plus"></i> <b>Yeni</b></a>
+                        </div>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -59,13 +59,11 @@
                                     <td class="text-center active"><b>@Yonetici.kullanici_adi</b></td>
                                     <td class="text-center active">
 
-                                        <button type="submit" class="btn btn-xs btn-primary">
-                                            <span class="glyphicon glyphicon-edit"></span> <b>Düzenle</b>
-                                        </button>
+                                        <div class="btn-group">
+                                            <a href="@Url.Action("edit", new {  })" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> <b>Düzenle</b></a>
 
-                                        <button type="submit" class="btn btn-xs btn-danger">
-                                            <span class="glyphicon glyphicon-trash"></span> <b>Sil</b>
-                                        </button>
+                                            <a href="@Url.Action("YoneticiSil",new { id = Yonetici.yonetici_id})" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> <b>Sil</b></a>
+                                        </div>
 
                                     </td>
                                 

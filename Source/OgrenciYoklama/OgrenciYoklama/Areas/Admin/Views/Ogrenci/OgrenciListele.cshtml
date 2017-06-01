@@ -27,9 +27,9 @@
                 <div class="panel-heading text-center">
                     <b>
                         Öğrenci Listesi 
-                        <button class="btn btn-xs btn-default pull-right">
-                            <span class="glyphicon glyphicon-plus"></span> <b><a href="@Url.Action("OgrenciEkle","Ogrenci")">Yeni</a></b>
-                        </button>
+                        <div class="btn-group pull-right">
+                            <a href="@Url.Action("OgrenciEkle", new { })" class="btn btn-xs btn-default"><i class="glyphicon glyphicon-plus"></i> <b>Yeni</b></a>
+                        </div>
                     </b>
                 </div>
                 <div class="panel-body">
@@ -60,7 +60,8 @@
                                         <td class="text-center active">
                                             <div class="btn-group">
                                                 <a href="@Url.Action("edit", new {  })" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> <b>Düzenle</b></a>
-                                                <a href="@Url.Action("ogrencisil",new { Ogrenci.ogrenci_id})" class="btn btn-xs btn-danger" data-post="Are you sure you want to delete @Ogrenci.ogrenci_ad?"><i class="glyphicon glyphicon-trash"></i> <b>Sil</b></a>
+                                                
+                                                <a href="@Url.Action("OgrenciSil",new { id = Ogrenci.ogrenci_id})" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> <b>Sil</b></a>
                                             </div>
 
                                         </td>

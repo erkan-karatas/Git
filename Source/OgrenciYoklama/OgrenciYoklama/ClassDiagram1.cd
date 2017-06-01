@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OgrenciYoklama.App_Start.BundleConfig" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\BundleConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.RouteConfig" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Database" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAQAAZAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.MvcApplication" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.YetkiKontrol" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>YetkiKontrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.AdminAreaRegistration" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\AdminAreaRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.Controllers.DersController" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Areas\Admin\Controllers\DersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.Controllers.OgrenciController" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\OgrenciController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.Controllers.YoklamaController" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\YoklamaController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.Controllers.YoneticiController" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEABAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\YoneticiController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.ViewModels.DerslerDersListele" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\ViewModels\Dersler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.ViewModels.OgrencilerOgrenciListele" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Areas\Admin\ViewModels\Ogrenciler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Areas.Admin.ViewModels.YoneticilerYoneticiListele" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\ViewModels\Yoneticiler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Controllers.LoginController" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAA=</HashCode>
+      <FileName>Controllers\LoginController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Infrastructure.RoleProvider" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEEAAwAAAEAAAAAAAABAAAAAAAAAIAAAAEAAEQAAA=</HashCode>
+      <FileName>Infrastructure\RoleProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Migrations._001_Ogrenci_Ve_Yonetici" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Migrations\_001_Ogrenci_Ve_Yonetici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Migrations._002_Dersler" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Migrations\_002_Dersler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Migrations._003_Yoklama" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Migrations\_003_Yoklama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.Ders" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAAAACAAAAEAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.DersMap" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.Ogrenci" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIBAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ogrenci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.OgrenciMap" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Ogrenci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.OgrenciDers" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Areas\Admin\ViewModels\OgrenciDers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.Yoklama" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAACAgAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\Yoklama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.YoklamaMap" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Yoklama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.Yonetici" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACAEAA=</HashCode>
+      <FileName>Models\Yonetici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.Models.YoneticiMap" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Yonetici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.ViewModels.LoginIndex" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OgrenciYoklama.DersModel" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAAAACAAAAEAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DersModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

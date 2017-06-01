@@ -43,13 +43,14 @@ namespace OgrenciYoklama.Areas.Admin.Controllers
             return RedirectToAction("OgrenciListele");
         }
 
-        [HttpPost]
+       
         public ActionResult OgrenciSil(int id)
         {
             var ogrenci = Database.Session.Query<Ogrenci>().FirstOrDefault(p => p.ogrenci_id == id);
             Database.Session.Delete(ogrenci);
             Database.Session.Flush();
             return RedirectToAction("OgrenciListele");
+            
         }
         
     }

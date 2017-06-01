@@ -14,8 +14,10 @@ namespace OgrenciYoklama.Areas.Admin.ViewModels
         public IEnumerable<Yonetici> Yoneticiler { get; set; }
     }
 
-
     
+
+
+
 
 
 

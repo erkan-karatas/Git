@@ -18,8 +18,9 @@ namespace OgrenciYoklama.Migrations
         {
             Create.Table("yoklama")
                  .WithColumn("yoklama_id").AsInt32().PrimaryKey().Identity()
-                 .WithColumn("ogrenci_id").AsInt32()
-                 .WithColumn("ders_id").AsInt32()
+                 .WithColumn("yoklama_tarih").AsDate()
+                 .WithColumn("ogrenci_id").AsString(256)
+                 .WithColumn("ders_id").AsString(128)
                  .WithColumn("durum").AsBoolean();
         }
     }
